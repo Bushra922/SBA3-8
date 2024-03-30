@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Catalog</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+
+    <div id="app">
+        <h1>#title#</h1>
+        <div>#content#</div>
+    </div>
+
+    
+    <div>
+        <br>
+
+        <form action="/api/getProduct/101" method="GET" id="productForm>
+        
+            <label class="form-label" for="productId">Product ID:</label>
+            <input type="text" id="productId" name="id" required>
+
+            <br>
+
+            <button id="submit" type="submit">Get Product Information</button>
+        </form>
+    </div>
+    
+</body>
+</html>

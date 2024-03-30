@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>#title#</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>#title#</h1>
+      <div>#content#</div>
+      <a href="/">Back to Index</a> <br>
+      <a href="/api/users">See a list of users</a> <br>     
+      <a href="/api/users/list">choose a user review</a> 
+    <div>
+        <h2>New User Form</h2>
+           <form action="api/users" method="POST" id="submit-form">
+        <label for="fname">Customer1:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">first name:</label>
+        <input type="text" id="lname" name="lname"><br>
+
+        <label for="uname">User name (email address ):</label>
+        <input type="text" id="uname" name="uname"><br>
+
+        <label for="role">Role:</label>
+        <select name="role" id="role">
+            <option value="review">review</option>
+        </select>
+        <br>
+       
+      </form> 
+    </div>
+  </body>
+</html>
